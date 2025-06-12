@@ -16,6 +16,7 @@ A simple Python app that connects to Google's **Gemini 2.0 Flash** model using a
 # 🌱 Startup Guide
 Clone this repository:
 ### In terminal set:
+#### To use this repository
 git clone https://github.com/Emilio-02/GeminiAPI-Chat.git
 cd GeminiAPI-Chat
 
