@@ -17,7 +17,7 @@ A simple Python app that connects to Google's **Gemini 2.0 Flash** model using a
 Clone this repository:
 ### In terminal set:
 #### To use this repository
-git clone https://github.com/Emilio-02/GeminiAPI-Chat.git
+git clone https://github.com/Emilio-02/GeminiAPI-Chat.git  
 cd GeminiAPI-Chat
 
 #### Install dependencies:
@@ -31,11 +31,11 @@ python main.py
 ### How to get a personal Gemini API Key?
 #### First step is to create a Project in Google Cloud.
 This link is where you'll Login with a google account:
-https://console.cloud.google.com/projectcreate 
+https://console.cloud.google.com/projectcreate  
 Next you will create a new project (if you don't have one yet).
 
 #### Get your key! 
-With this link: https://aistudio.google.com/apikey
+With this link: https://aistudio.google.com/apikey  
 Click the button "Get API key" and you will obtain it!
 
 ### What to do with this key?
