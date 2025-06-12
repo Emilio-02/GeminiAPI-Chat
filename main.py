@@ -2,27 +2,28 @@ from dotenv import load_dotenv
 import os
 from google import genai
 
-# 1. Carga las variables definidas en .env
+# 1. Load the variables defined in .env 
 load_dotenv()
 
-# 2. Recupera la clave
+# 2. Usage of the key
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
-    raise RuntimeError("La variable GEMINI_API_KEY no está definida.")
+    raise RuntimeError("The variable GEMINI_API_KEY isn't defined yet.")
 
-# 3. Usa la clave al instanciar el cliente
+# 3. Use the key for the program
 client = genai.Client(api_key=api_key)
 
+# 4. Creation of the menu to execute the program
 while True:
-    print("Escribe 'salir' para cerrar el programa.")
-    prompt = input("Preguntale a Gemini: ")
-    print("Generando respuesta...")
+    print("Write 'exit' if you want to close the program.")
+    prompt = input("Ask to Gemini: ")
+    print("Generating response...")
 
-    if prompt.lower() == "salir":
-        print("saliendo...")
+    if prompt.lower() == "exit":
+        print("Closing the program...")
         break
     
     response = client.models.generate_content(
     model = "gemini-2.0-flash",
     contents = prompt )
-    print("Respuesta de Gemini: ", response.text)
+    print("Response from Gemini: ", response.text)
